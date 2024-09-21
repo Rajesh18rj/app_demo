@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Job;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Employer;
 
@@ -10,6 +11,8 @@ use App\Models\Employer;
  */
 class JobFactory extends Factory
 {
+    protected $model = Job::class;
+
     /**
      * Define the model's default state.
      *
@@ -20,7 +23,7 @@ class JobFactory extends Factory
         return [
             'title' => fake()->jobTitle(),
             'employer_id' => Employer::factory(),
-            'salary' => '$50,000'
+            'salary' => '$50,000',
         ];
     }
 }
