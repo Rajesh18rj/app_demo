@@ -7,7 +7,7 @@
 
     <h2>{{ $job['title'] }}</h2>
     <p> {{ $job['salary'] }} Per Year </p>
-    <p> test git hub Per Year </p>
+
 
 
 
